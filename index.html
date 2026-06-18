@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>You VS You</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: #0a0a10;
+    overflow: hidden;
+    font-family: Consolas, "Courier New", monospace;
+  }
+  #wrap {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  canvas {
+    background: #12121c;
+    image-rendering: pixelated;
+    max-width: 100vw; max-height: 100vh;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    cursor: crosshair;
+    touch-action: none;
+  }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="1100" height="700"></canvas>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
